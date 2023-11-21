@@ -44,6 +44,9 @@ namespace Campanha.Domain.Servicos
         {
             familiaRepositorio.RemoverBeneficioRecebido(familiaId, beneficioId);
         }
-
+        public void FinalizarBeneficioRecebido(int familiaId, int beneficioId, DateTime data)
+        {
+            familiaRepositorio.FinalizarBeneficioRecebido(familiaId, beneficioId, data);
+        }
     }
 }
